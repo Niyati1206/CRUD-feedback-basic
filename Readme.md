@@ -1,11 +1,15 @@
-To run the project
-1. Install all dependencies
-```
-npm install
-```
-2. Start mongdb atlas or just type mogosh in the command prompt
-3. Run  the app
-```
-nodemon app.js
-```
-4. Go to http://localhost:3000/
+## To Run the Project
+
+1. Install all dependencies  
+   ```bash
+   npm install
+
+2. Start MongoDB Atlas or run MongoDB locally (in another terminal):
+      ```bash
+   mongod
+
+3. Run the app
+      ```bash
+   nodemon app.js  
+4. Open in browser
+http://localhost:3000/
