@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../public/styles.css">
+    <title>Edit form</title>
+</head>
+<body>
+    <h1>Edit Form</h1>
+    <form id="editForm" action="/users/<%= user._id %>/update" method="post">
+   <label for="name">Name : <input type="text" name="name" value=" <%= user.name %> " > </label><br>
+        <label for="email">Email: <input type="email" name="email" value="<%= user.email %>" ></label> <br>
+        <label for="age">Age: <input type="number" name="age" value="<%= user.age || '' %>"></label><br>
+        <label for="feedback">Feedback: <input type="text" name="feedback" value="<%= user.feedback %>"></label> <br>
+        <button type="submit">Save</button>
+    </form>
+    <p><a href="/">Back to list</a></p>
+</body>
+<script>
+    document.getElementById("editForm").addEventListener("submit", function(){
+        alert("Thank you for your response");
+    })
+</script>
+</html>
